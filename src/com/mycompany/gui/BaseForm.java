@@ -19,13 +19,7 @@
 
 package com.mycompany.gui;
 
-import Categorie.gui.AllCategories;
-import Comptabilite.gui.AllComptabilite;
-import EventType.gui.getAllEventType;
-import Event.gui.getAllEvent;
 import Reclamation.gui.AllReclamations;
-import Relationnel.gui.AllRelationnels;
-import TypeComptabilite.gui.AllTypeComptabilite;
 import com.codename1.components.ScaleImageLabel;
 import com.codename1.ui.Component;
 import com.codename1.ui.Display;
@@ -91,13 +85,7 @@ public class BaseForm extends Form {
         
         tb.addMaterialCommandToSideMenu("Newsfeed", FontImage.MATERIAL_UPDATE, e -> new NewsfeedForm(res).show());
         tb.addMaterialCommandToSideMenu("Profile", FontImage.MATERIAL_SETTINGS, e -> new ProfileForm(res).show());
-        tb.addMaterialCommandToSideMenu("Gerer Categorie", FontImage.MATERIAL_SETTINGS, e -> new AllCategories(res).show());
-        tb.addMaterialCommandToSideMenu("Gerer Relationnel", FontImage.MATERIAL_SETTINGS, e -> new AllRelationnels(res).show());
-        tb.addMaterialCommandToSideMenu("Gerer Type Comptabiliter", FontImage.MATERIAL_SETTINGS, e -> new AllTypeComptabilite(res).show());
-        tb.addMaterialCommandToSideMenu("Gerer Comptabiliter", FontImage.MATERIAL_SETTINGS, e -> new AllComptabilite(res).show());
         tb.addMaterialCommandToSideMenu("Gerer Reclamation", FontImage.MATERIAL_SETTINGS, e -> new AllReclamations(res).show());
-        tb.addMaterialCommandToSideMenu("Gestion Event Type", FontImage.MATERIAL_SETTINGS, e -> new getAllEventType(res).show());
-        tb.addMaterialCommandToSideMenu("Gestion Event", FontImage.MATERIAL_SETTINGS, e -> new getAllEvent(res).show());
         tb.addMaterialCommandToSideMenu("Logout", FontImage.MATERIAL_EXIT_TO_APP, e -> new WalkthruForm(res).show());
     }
 }
